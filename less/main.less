@@ -1,0 +1,63 @@
+body{
+    background-color: white;
+    color:black;
+    font-family: monospace;
+}
+
+ul.list-inline{
+  list-style: none;
+  margin-left:-40px;
+
+  li{
+      display: inline-block;
+      margin-right: 10px;
+
+  }
+}
+
+li{
+    #remove{
+        opacity:0;
+        color:red;
+    }
+
+    &:hover{
+        #remove{
+            opacity:1;
+        }
+    }
+}
+
+
+nav{
+    a{
+        text-decoration: none;
+        color:blue;
+    }
+}
+
+h1{
+    color:rgba(0,0,0,0.2);
+}
+
+form{
+    margin:20px 0;
+    input,label{
+        display: block;
+    }
+
+    button{
+        margin: 20px 0;
+        background-color: blue;
+        color:white;
+    }
+}
+
+
+footer{
+    position: absolute;
+    bottom:0;
+    left:0;
+    margin:10px;
+    color:lightslategrey;
+}

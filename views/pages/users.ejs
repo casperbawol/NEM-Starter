@@ -1,0 +1,12 @@
+<%- contentFor('body') %>
+<h1>Users</h1>
+
+<%if (users.length > 0) { %>
+    <ul>
+    <% for (user of users) { %>
+        <li><%= user.name %> <%= user.surname %> <a data-user-id="<%= user._id %>" id="remove" href="">[Delete User]</a></li>
+    <% } %>
+    </ul>
+<% } else { %>
+<small>No users, <a href="/create">Add</a> </small>
+<% } %>
